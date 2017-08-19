@@ -1,35 +1,25 @@
-import React,{Component} from 'react'
-import {BrowserRouter,Route}  from 'react-router-dom'
+import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 
 
-
-export  default class AppHeader extends Component{
+export default class AppHeader extends Component{
 	
-	   constructor(){
-	   	 super();
-	   	
-	   	
-	   	
-	   	
-	   }
 	
-	  render(){
-	  	  
-	      return (
-	      	 <header class="app-header">			
-				<span class="iconfont icon-menu" ></span>
-				<h1 class="title">电影院</h1>
-				<p class="city iconfont icon-arrow-down">深圳</p>
-				<span class="iconfont icon-person"></span>
+	render(){
+		return (
+			<header class="app-header">
 				
-			</header>   	
-	      )
-	  	
-	  	
-	  }
+				<span class="iconfont icon-menu" onClick={this.menuAction.bind(this)}></span>
+				<h1 class="title">{this.props.title}</h1>
+				<Link to="/city-list"  class="city iconfont icon-arrow-down">上海</Link>
+				<Link to="/me" class="iconfont icon-person"></Link>
+				
+			</header>
+		)
+	}
 	
-	 menuAction(){
-	 	
-	 	
-	 }
+	menuAction(){
+		this.props.menuHandle();
+	}
+	
 }
