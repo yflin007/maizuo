@@ -3,6 +3,9 @@ import {BrowserRouter, Route} from 'react-router-dom'
 
 import SilderBar from './views/common/SilderBar.js'
 import AppHeader from './views/common/AppHeader.js'
+import Details from './views/home/Details.js'
+import Morefilms from './views/home/Morefilms.js'
+
 
 import Home from './pages/Home.js'
 import Movies from './pages/Movies.js'
@@ -11,6 +14,8 @@ import Shop from './pages/Shop.js'
 import Me from './pages/Me.js'
 import Card from './pages/Card.js'
 import City from './pages/City.js'
+
+
 
 import './css/app.css'
 
@@ -46,7 +51,8 @@ export default class App extends Component{
 					<Route path="/me" component={Me}/>
 					<Route path="/card" component={Card}/>
 					<Route path="/city-list" component={City}/>
-					
+					<Route path="/Details" component={Details}/>
+					<Route path="/Morefilms" component={Morefilms}/>					
 				</div>
 			</BrowserRouter>
 		)

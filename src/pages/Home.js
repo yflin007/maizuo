@@ -16,10 +16,13 @@ export default class Home extends Component{
 			bannerData: [],
 			hitFilmData:[],
 			comingData:[]
+		
 		}
 	}
 	
 	render(){
+		
+		
 		return (
 			<div id="home" class="page">
 				{/*轮播图*/}
@@ -71,10 +74,12 @@ export default class Home extends Component{
 		  this.setState({comingData:data})
 	     
 		})	
+		
 	}
 	 
 	componentDidMount(){
 		
 	}
+	
 	
 }

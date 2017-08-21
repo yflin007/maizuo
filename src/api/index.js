@@ -7,9 +7,14 @@ const homeBannerApi = "/v4/api/billboard/home"
 //即将上映
 const  comingSoon  =  "/v4/api/film/coming-soon"
 //m.maizuo.com/v4/api/film/coming-soon?__t=1503123958405&page=1&count=3 
+
+//详情页
+//m.maizuo.com/v4/api/film/3828?__t=1503206002545
+const  detailApi ="/v4/api/film/"
 export default {
 	homeBannerApi,
 	nowPlaying,
-	comingSoon
+	comingSoon,
+	detailApi
 	
 }

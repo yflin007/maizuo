@@ -9,9 +9,10 @@
  background:#ebebeb;
  padding:15px;
 }
-.hitlist  li {margin-top:15px;background:#fff;position:relative;padding-bottom:10px;}
-.hitlist  li  img{width:100%;height:191px;}
-.hitlist  li h1{
+.hitlist  .item {margin-top:15px;background:#fff;position:relative;padding-bottom:10px;display:block;}
+
+.hitlist  .item  img{width:100%;height:191px;}
+.hitlist   .item h1{
 	font-size: 12px;
     line-height: 15px;
     -webkit-user-select: text;
@@ -21,7 +22,7 @@
     padding-left:15px;box-sizing:border-box;
     }
  
- .hitlist  li h2{
+ .hitlist   .item h2{
  	 font-size: 12px;
     line-height: 15px;
  	color: #333;
@@ -31,13 +32,13 @@
  }   
     
    
-.hitlist  li p{
+.hitlist   .item p{
 	font-size: 8px;
     color: #9a9a9a;
     line-height: 15px;
 	padding-left:15px;box-sizing:border-box;
 }
-.hitlist  li .grade{
+.hitlist  .item .grade{
 	color: #f78360;
     display: inline-block;
     line-height: 50px;
@@ -48,7 +49,7 @@
 	bottom:10px;
 	right:15px;
 }
-.hitlist  li .info{
+.hitlist   .item .info{
 	position: absolute;
     right: 15px;
     bottom:10px;
@@ -97,4 +98,35 @@ position: relative;
     z-index:88;
     position: relative;
 }
+   
+/***********查看更多*************/
+.morefilms{width: 100%;
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    }
+.morefilms .tab{display:flex;height:46px;border-bottom: solid #fe6e00 1px;position:relative;}
+.morefilms .tab .tab1{flex:1;text-align: center;line-height:46px;}
+.morefilms .tab .tab1.active{color:red;}
+.border-bottom{display: block;width:50%;height:2px;bottom:0;background:red;position:absolute;transition:0.5s;}
+
+/********详情页**************/
+.desc{background:#e1e1e1;height:100%;}
+.desc img{width:100%;height:210px;}
+
+.desc  .title{
+	
+    margin: 16px auto;
+    border-left: 16px solid RGB(228, 200, 156);
+    font-size: 16px;
+    padding-left: 4px;	
+	
+}
+.desc .info{padding:0 20px;color:#333;font-size: 14px;height:100%;}
+.desc .info p{margin-top: 15px;}
    
