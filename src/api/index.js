@@ -15,12 +15,19 @@ const  detailApi ="/v4/api/film/"
 //http://m.maizuo.com/v4/api/cinema?__t=1503307958875
 const  cinemaApi ='/v4/api/cinema'
 
+//商城数据  http://aura.maizuo.com/api/ad/list
+const  shopCateApi ='/api/ad/list'
 
+//商品列表
+//aura.maizuo.com/api/recommend/home?page=1&num=20
+const  recommendApi='api/recommend/home?'
 export default {
 	homeBannerApi,
 	nowPlaying,
 	comingSoon,
 	detailApi,
-	cinemaApi
+	cinemaApi,
+    shopCateApi,
+    recommendApi
 	
 }

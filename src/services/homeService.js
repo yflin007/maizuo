@@ -170,6 +170,69 @@ function getCinema(){
 	})
 }
 
+function getshopCate(){
+	return new Promise((resolve, reject)=>{
+		axios.get(`${API.shopCateApi}`)
+		.then((response)=>{
+		       var type1 =[];	
+		       var type2 =[];	
+		       var type3 =[];	
+		       var type4 =[];	
+		       var type5 =[];	
+	       var data =response.data.data;       
+	         for(var i =0;i<data.length;i++){	 
+	         	 if(data[i].type==1){
+	         	  	
+	         	 	type1.push(data[i]);
+	         	 	
+	         	 }else if(data[i].type==2){
+	         	 	
+	         	    type2.push(data[i]);
+	         	 	
+	         	 }else if(data[i].type==3){
+	         	 	
+	         	 		type3.push(data[i]);
+	         	 	
+	         	 	
+	         	 }else if(data[i].type==5){
+	         	 	
+	         	 	  	type5.push(data[i]);
+	         	 }else{
+	         	 	
+	         	 		type4.push(data[i]);
+	         	 	
+	         	 }
+	        
+	         	
+	         }   	   		   
+       	    var total=[];
+		     total.push({"type1":type1});
+		     total.push({"type2":type2});
+		     total.push({"type3":type3});
+		     total.push({"type4":type4});
+		     total.push({"type5":type5});
+		    resolve(total);      
+		})
+		.catch((error)=>{
+			console.log(error)
+		})
+	})
+}
+ 
+  
+ function  getRecommend(page,num){
+	return new Promise((resolve, reject)=>{
+		axios.get(`${API.recommendApi}page=${page}&num=${num}`)
+		.then((response)=>{
+	    
+		   resolve(response.data.data.list);      
+		})
+		.catch((error)=>{
+			console.log(error)
+		})
+	})
+} 
+  
 export default {
 	getHomeBanner,
 	getNowPlaying,
@@ -177,5 +240,7 @@ export default {
 	getDetail,
 	getNowPlay,
 	getComeSoon,
-	getCinema
+	getCinema,
+	getshopCate,
+	getRecommend
 }

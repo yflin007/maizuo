@@ -1,0 +1,60 @@
+/*电影院页*/
+
+.cinema-page{	
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	top:51px;
+	background:#e1e1e1;
+	
+}
+.cinema ul{display:none;}
+.cinema ul.active0{display:block;}
+.cinema {background:#fff;padding-bottom:1px;}
+.cinema .title{
+   height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 16px;
+    background: #e1e1e1;
+    color: #636363;
+    cursor: pointer;	
+}
+.cinema .item{padding:15px;border-bottom:1px solid #999999;transition:0.5s;}
+.cinema .item>span{background-color: #51add0;font-size:10px;color:#fff;padding:2px;} 
+.cinema .item>h6{
+	display: inline-block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    color: #ccc;
+	
+}
+.cinema .item p span:nth-of-type(1){
+	display: inline-block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	border:1px solid #fc8558;
+	font-size:10px;
+	color:#fc8558;
+	line-height:15px;
+	text-align: center;
+	
+}
+.cinema .item p span:nth-of-type(2){
+	display: inline-block;
+	border-radius:50%;
+	border:1px solid #88aec8;
+	width:15px;
+	height:15px;
+	font-size:10px;
+	color:#88aec8;	
+	line-height:15px;
+	text-align: center;
+}
+.cinema .item p span i{font-style:normal;}
+.cinema .item p strong{float:right;font-style:normal;color:#999999;font-size:10px;}

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 
 import homeService from '../services/homeService.js'
-
+import '../css/cinema.css' 
 export default class Cinema extends Component{
 	
 	
