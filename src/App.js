@@ -15,10 +15,7 @@ import Me from './pages/Me.js'
 import Card from './pages/Card.js'
 import City from './pages/City.js'
 
-
-
 import './css/app.css'
-
 
 
 export default class App extends Component{

@@ -21,10 +21,7 @@ export default class City extends Component{
 	      		transitionLeaveTimeout={1000}>
 					<div id="city" class={'page '+this.state.className}>
 						
-						<button onClick={this.selectAction.bind(this, '北京')}>北京</button>
-						<button onClick={this.selectAction.bind(this, '上海')}>上海</button>
-						<button onClick={this.selectAction.bind(this, '深圳')}>深圳</button>
-						<button onClick={this.selectAction.bind(this, '广州')}>广州</button>
+				
 						
 						
 					</div>

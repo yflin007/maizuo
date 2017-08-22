@@ -116,7 +116,17 @@ position: relative;
 .border-bottom{display: block;width:50%;height:2px;bottom:0;background:red;position:absolute;transition:0.5s;}
 
 /********详情页**************/
-.desc{background:#e1e1e1;height:100%;}
+
+.detail-page{
+	
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	top:51px;
+	background:#e1e1e1;
+}
+   
 .desc img{width:100%;height:210px;}
 
 .desc  .title{
@@ -127,6 +137,162 @@ position: relative;
     padding-left: 4px;	
 	
 }
-.desc .info{padding:0 20px;color:#333;font-size: 14px;height:100%;}
-.desc .info p{margin-top: 15px;}
+.desc .info{padding:0 20px;color:#333;height:100%;}
+.desc .info p{margin-top: 10px;font-size:10px;}
+.tab1-list .item{	
+ 
+    display:flex;	
+}
+ .desc .info  .ticket{
+ 	font-size: 14px;
+    width: 156px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    border: none;
+    background-color: #fe8233;
+    padding: 0;
+    margin: 0;
+    border-radius: 18px;
+    color: #fff;
+    -webkit-transition: 0.5s ease;
+    display: block;
+ 	margin:0 auto;
+ 	margin-top:10px;
+ 	
+ }
+         
    
+/********查看更多**********/
+.tab1-list .item{padding:20px 0;position: relative;}
+.tab1-list .item:after{
+	content: "";
+	position:absolute;
+	width:100%;	
+	display:block;
+	left:0;
+	bottom:0;
+	border-bottom:1px dashed #999;
+	transform: scaleY(0.5);
+}
+.tab1-list .item img{width:68px;height:80px;}
+.tab1-list .item  .info{padding-left:15px;}
+.tab1-list .item .grade{color: #f78360;
+    display: inline-block;
+    line-height: 50px;
+    float: right;
+    margin-right: 15px;
+    font-size: 18px;
+	position: absolute;
+	bottom:10px;
+	right:15px;
+	top:12px;
+	}
+.tab1-list .item .grade i{font-style: normal;color:#999;font-size:14px;}
+.tab1-list .item h1{
+	font-size: 16px;
+    line-height: 32px;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+}
+ .tab1-list .item p:nth-of-type(1){
+ 	height: 24px;
+    line-height: 24px;
+    color: #8e8e8e;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: inline-block;	
+ }
+
+ 
+   .tab1-list .item p:nth-of-type(2){
+   	 line-height: 24px;
+    color: #8e8e8e;
+    font-size: 12px;	
+   }
+  .tab1-list .item p:nth-of-type(2) span i{
+  	 color: #8aa2bf;
+  	 font-style:normal;
+  } 
+   .tab1-list .item p:nth-of-type(2) span:nth-of-type(1){
+   	padding-right:30px; 	
+   }  
+   
+   .tab1-list .item h6{  
+    line-height: 24px;
+    color: #ffb375;
+    font-size: 12px;  
+}  
+  
+  .tab1-list .item h6  span{
+  	
+  	padding-left:15px;
+  	
+  	
+  }
+
+/*电影院页*/
+
+.cinema-page{	
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+	top:51px;
+	background:#e1e1e1;
+	
+}
+.cinema ul{display:none;}
+.cinema ul.active0{display:block;}
+.cinema {background:#fff;padding-bottom:1px;}
+.cinema .title{
+   height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 16px;
+    background: #e1e1e1;
+    color: #636363;
+    cursor: pointer;	
+}
+.cinema .item{padding:15px;border-bottom:1px solid #999999;transition:0.5s;}
+.cinema .item>span{background-color: #51add0;font-size:10px;color:#fff;padding:2px;} 
+.cinema .item>h6{
+	display: inline-block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    color: #ccc;
+	
+}
+.cinema .item p span:nth-of-type(1){
+	display: inline-block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	border:1px solid #fc8558;
+	font-size:10px;
+	color:#fc8558;
+	line-height:15px;
+	text-align: center;
+	
+}
+.cinema .item p span:nth-of-type(2){
+	display: inline-block;
+	border-radius:50%;
+	border:1px solid #88aec8;
+	width:15px;
+	height:15px;
+	font-size:10px;
+	color:#88aec8;	
+	line-height:15px;
+	text-align: center;
+}
+.cinema .item p span i{font-style:normal;}
+.cinema .item p strong{float:right;font-style:normal;color:#999999;font-size:10px;}

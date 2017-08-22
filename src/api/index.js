@@ -11,10 +11,16 @@ const  comingSoon  =  "/v4/api/film/coming-soon"
 //详情页
 //m.maizuo.com/v4/api/film/3828?__t=1503206002545
 const  detailApi ="/v4/api/film/"
+//获取影院
+//http://m.maizuo.com/v4/api/cinema?__t=1503307958875
+const  cinemaApi ='/v4/api/cinema'
+
+
 export default {
 	homeBannerApi,
 	nowPlaying,
 	comingSoon,
-	detailApi
+	detailApi,
+	cinemaApi
 	
 }

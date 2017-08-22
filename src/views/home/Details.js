@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import homeService from '../../services/homeService.js'
 
- 
+import {Link} from 'react-router-dom' 
 export default class Details extends Component{
 	
 	
@@ -28,7 +28,7 @@ export default class Details extends Component{
 		return (
 			
 			
-			<div class="page">
+			<div class="detail-page">
 		
 			
             <div className="desc">
@@ -41,6 +41,9 @@ export default class Details extends Component{
             <p>类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型：{this.state.detailDat.category}</p>
             <p>上映日期：{this.state.detailDat.time}</p>
             <p className="p">{this.state.detailDat.synopsis}</p>
+            
+             <Link to={'/cinema/'+this.state.detailDat.id} class="ticket">立即购票</Link>
+            
           </div>
         </div>
       
