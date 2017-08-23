@@ -55,11 +55,11 @@
     margin-bottom: -5px;
 	
 	 }
-.handpickList{display:flex;flex-flow:wrap;padding:0 15px;background-color: #f2f2f2;box-sizing: border-box;}
+.handpickList{display:flex;flex-flow:wrap;padding:0 5px;background-color: #f2f2f2;box-sizing: border-box;}
 
 .handpickList li{width:49%;background:#fff;margin-bottom:15px;padding-bottom:10px;}
-.handpickList li:nth-last-of-type()
-.handpickList li img{width:100%;}
+.handpickList li:nth-of-type(2n+1){margin-right:5px;}
+.handpickList>li>a>img{width:100%;height:175px;}
 .handpickList li h1{
 	 font-size: 12px;
     height: 34px;

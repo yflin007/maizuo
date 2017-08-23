@@ -20,7 +20,12 @@ const  shopCateApi ='/api/ad/list'
 
 //商品列表
 //aura.maizuo.com/api/recommend/home?page=1&num=20
-const  recommendApi='api/recommend/home?'
+const  recommendApi='/api/recommend/home?'
+
+//http://m.maizuo.com/v4/api/city?__t=1503467523497
+//后去城市数据
+
+const  cityApi ='/v4/api/city/'
 export default {
 	homeBannerApi,
 	nowPlaying,
@@ -28,6 +33,6 @@ export default {
 	detailApi,
 	cinemaApi,
     shopCateApi,
-    recommendApi
-	
+    recommendApi,
+	cityApi
 }

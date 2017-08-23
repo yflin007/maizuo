@@ -15,6 +15,6 @@ changeOrigin:true
 
 
 app.use('/api',httpProxyMiddleware({
-target:'http://m.maizuo.com',
+target:'http://aura.maizuo.com',
 changeOrigin:true
 }))

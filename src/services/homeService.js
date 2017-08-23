@@ -137,16 +137,21 @@ function getCinema(){
             arr=response.data.data.cinemas;   
             var region=[];    
             var newArr=[];
+            
+            
             for(var i=0;i<arr.length;i++){              
                   var obj =arr[i];    
             
                 if(region.indexOf(obj.district.name)==-1){             	
               	  region.push(obj.district.name);             	
                 }
-            }                 
+            }           
+            
             for(var i=0;i<region.length;i++){           	 
             	newArr.push({name:region[i],iShow:'true',cinema:[]});             	          	
             }        
+            
+            
             for( var i=0;i<arr.length;i++){
            	  
            	      var obj =arr[i];
@@ -160,7 +165,6 @@ function getCinema(){
            	   }
            }
              
-           
              resolve(newArr);      
            
 		})
@@ -218,7 +222,6 @@ function getshopCate(){
 		})
 	})
 }
- 
   
  function  getRecommend(page,num){
 	return new Promise((resolve, reject)=>{
@@ -232,7 +235,6 @@ function getshopCate(){
 		})
 	})
 } 
-  
 export default {
 	getHomeBanner,
 	getNowPlaying,
